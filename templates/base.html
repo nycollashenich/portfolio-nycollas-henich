@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   <link rel="stylesheet" href="{% static 'css/avatar.css' %}">
+  <link rel="stylesheet" href="{% static 'css/scroll.css' %}">
+  <link rel="stylesheet" href="{% static 'css/box-stack.css' %}">
   
   <title>Henich</title>
 
@@ -27,11 +29,16 @@
 <body>
 
 {% block content %}{% endblock content %}
+<button class="scrollTop" onclick="backTop();">
+  <img src="" alt=""><i class="fa fa-arrow-up"></i>
+</button>
 
     <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
     <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+    <script src="{% static 'js/box-stack.js' %}"></script>
    
 </body>
 </html>
