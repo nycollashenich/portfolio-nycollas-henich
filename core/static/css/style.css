@@ -36,10 +36,9 @@ body {
 
 .heading_container h2 {
   font-weight: bold;
-  color: #050000; 
+  color: green; 
   /* sobre-mim e contact titulo */
   padding: 3px 10px;
-  border-bottom: 1px solid #000000;
 }
 
 /*header section*/ 
@@ -308,10 +307,7 @@ a:focus {
   color: #e93f1a;
 }
 
-.body_bg {
-  background-image: url(../images/body_bg.jpg);
-  background-size: cover;
-}
+
 
 /* body mudar */
 
@@ -389,8 +385,9 @@ a:focus {
 }
 
 .contact_section .contact_form {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 100px;
+  padding-right: 20px;
+  
 }
 
 .contact_section .contact_form .top_input {
@@ -400,10 +397,12 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          
 }
 
 .contact_section .contact_form .top_input input {
   width: 48%;
+  
 }
 
 .contact_section .contact_form input {
@@ -413,8 +412,9 @@ a:focus {
   padding-left: 15px;
   border: none;
   outline: none;
-  background-color: #1c1b2d;
-  color: #ffffff;
+  background-color: black;
+  color: green;
+  
 }
 
 .contact_section .contact_form input.message_input {
@@ -440,20 +440,20 @@ a:focus {
 .contact_section .contact_form button {
   display: inline-block;
   padding: 8px 35px;
-  background-color: #e93f1a;
+  background-color: black;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
-  border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 45px;
 }
 
 .contact_section .contact_form button:hover {
   background-color: transparent;
-  border-color: #e93f1a;
-  color: #e93f1a;
+  border-color: black;
+  color: green;
+  right: 0;
 }
 
 .contact_section .img-box img {

@@ -11,15 +11,12 @@
               </h2>
             </div>
             <br>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-              desktop publishing packages and web page editors now use Lorem Ipsum as their
-            </p>
-            <a href="">
-              Get Started
-            </a>
+            {% block 'sobre-mim-descricao' %}
+              <p>
+                Olá, eu sou o Nycollas! Atualmente sou estudante de Análise e Desenvolvimento de Sistemas. Iniciei meus estudos na programação em novembro de 2023 e, desde então, não largo mais! Estou seguindo minha jornada como desenvolvedor Backend, 
+                com especialidade em <strong>Python, Django e Flask</strong>.
+              </p>
+            {% endblock 'sobre-mim-descricao' %}
           </div>
         </div>
         <div class="col-md-6">
@@ -28,5 +25,4 @@
           </div>
         </div>
       </div>
-    </div>
   </section>

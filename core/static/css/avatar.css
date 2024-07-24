@@ -19,3 +19,14 @@
     margin-right: 320px;
     margin-top: -12px;
 }
+
+.imagem-ajustada-sc{
+    position: absolute;
+    right: 0; /* Posiciona a imagem à direita */
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    width: 100%;
+    max-width: 350px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção */
+    margin-right: 100px;
+    margin-top: -12px;
+}
