@@ -191,7 +191,7 @@ a:focus {
   width: 100%;
 }
 
-.slider_section .carousel-indicators {
+.slider_section .carousel-indicators .avatar-img{
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -681,4 +681,10 @@ a:focus {
   font-size: 1.5em;
   color: black;
   opacity: 0,20;
+}
+
+.imagem-ajustada {
+  width: 100%; /* Faz com que a imagem ocupe 100% da largura do contêiner pai */
+  max-width: 300px; /* Limita a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
 }

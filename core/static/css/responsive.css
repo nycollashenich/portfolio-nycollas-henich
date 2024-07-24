@@ -27,8 +27,7 @@
 }
 
 @media (max-width: 768px) {
-
-
+    
 
     .msg {
         display: inline-block;
@@ -96,3 +95,14 @@
     }
 
 }
+
+
+@media (max-width: 600px) {
+    .imagem-ajustada {
+      display: none;
+    }
+
+    .imagem-ajustada-joia{
+        display: none;
+    }
+  }
