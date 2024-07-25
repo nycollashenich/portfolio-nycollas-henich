@@ -285,8 +285,9 @@ a:focus {
 }
 
 /* end slider section */
-.about_section .img-box img {
+.about_section  {
   width: 100%;
+  
 }
 
 .about_section .detail-box a {

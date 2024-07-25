@@ -16,28 +16,30 @@
                 Olá, eu sou o Nycollas! Atualmente sou estudante de Análise e Desenvolvimento de Sistemas. Iniciei meus estudos na programação em novembro de 2023 e, desde então, não largo mais! Estou seguindo minha jornada como desenvolvedor Backend, 
                 com especialidade em <strong>Python, Django e Flask</strong>.
               </p>
+              <br>
+              <p>Ao lado estão algumas das minhas principais ferramentas. 
+                Elas variam entre Frameworks e banco de dados, com foco principal na linguagem Python.
+              </p>
             {% endblock 'sobre-mim-descricao' %}
           </div>
         </div>
         <div class="col-md-6">
-          <div class="container-box">
             <div class="swiper-box mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  <img src="{% static 'images/python-stack.png' %}" class="img-box-stack" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img src="{% static 'images/django-stack.png' %}" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img src="{% static 'images/flask-stack.png' %}" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <img src="{% static 'images/my-sql-stack.png' %}" />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-            </div>
           <div>
         </div>
       </div>

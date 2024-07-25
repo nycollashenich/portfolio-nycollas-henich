@@ -28,7 +28,10 @@
 
 @media (max-width: 768px) {
     
-
+    /* .about_section{
+    padding-block: -500px;
+   } */
+    
     .msg {
         display: inline-block;
         align-items: center;
@@ -47,9 +50,7 @@
         display: none;
     }
 
-    .about_section .img-box {
-        margin-top: 35px;
-    }
+    
 
     .service_section .box {
         width: 100%;
@@ -78,7 +79,7 @@
     .info_section .footer_contact {
         width: 315px;
     }
-    
+   
 }
 
 @media (max-width: 400px) {
@@ -90,10 +91,11 @@
 }
 
 @media (min-width: 1200px) {
-    .container {
+    /* .container {
         max-width: 1170px;
-    }
+    } */
 
+    
 }
 
 
