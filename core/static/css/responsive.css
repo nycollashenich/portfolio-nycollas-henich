@@ -20,7 +20,6 @@
     }
 
     .slider_section .carousel-indicators {
-
         height: 100%;
     }
 
@@ -50,8 +49,6 @@
         display: none;
     }
 
-    
-
     .service_section .box {
         width: 100%;
     }
@@ -79,24 +76,13 @@
     .info_section .footer_contact {
         width: 315px;
     }
-   
 }
 
-@media (max-width: 400px) {
-    
-}
+@media (max-width: 400px) {}
 
-@media (max-width: 360px) {
-    
-}
+@media (max-width: 360px) {}
 
-@media (min-width: 1200px) {
-    /* .container {
-        max-width: 1170px;
-    } */
-
-    
-}
+@media (min-width: 1200px) {}
 
 
 @media (max-width: 600px) {

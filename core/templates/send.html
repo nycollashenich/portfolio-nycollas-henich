@@ -1,6 +1,6 @@
 {% load static %}
 <div class="body_bg layout_padding">
-  <section class="contact_section">
+  <section class="contact_section" id="contato">
       <div class="container">
         <div class="heading_container">
           <h2 id='contato'>
@@ -12,13 +12,10 @@
         <div class="row">
           <div class="col-md-5">
             <div class="contact_form ">
-              <form action="">
-                <input type="text" placeholder="Seu nome">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Messagem" class="message_input">
-                <button>
-                  Enviar
-                </button>
+              <form action="" method="post" autocomplete="on"">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit">Enviar</button>
               </form>
             </div>
           </div>

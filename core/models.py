@@ -8,7 +8,6 @@ def get_file_path(_instace, filename):
     return filename
 
 
-
 class Base(models.Model):
     criado = models.DateField('Criado em', auto_now_add=True)
     modificado = models.DateField('Modificado em', auto_now=True)
