@@ -28,9 +28,9 @@
 
 @media (max-width: 768px) {
     
-    /* .about_section{
-    padding-block: -500px;
-   } */
+    .stack-box{
+        align-items: center;
+    }
     
     .msg {
         display: inline-block;
@@ -101,7 +101,7 @@
 
 @media (max-width: 600px) {
     .imagem-ajustada {
-      display: none;
+        display: none;
     }
 
     .imagem-ajustada-joia{

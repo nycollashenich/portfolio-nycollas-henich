@@ -1,4 +1,7 @@
-
+.stack-box{
+    display: flex;
+    padding-block: 200px;
+}
 
 .swiper-box {
 width: 300px;
