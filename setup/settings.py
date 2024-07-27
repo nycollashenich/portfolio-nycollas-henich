@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+from decouple import config
 from pathlib import Path
 import os
 
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#u6g@pto&70$--b6suq)))+tj=e@#*2e4zy8me8zy9ib05*am@'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -133,12 +134,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Para enviar o email // smpt
-# if DEBUG: 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# else:    
-#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-#     EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-#     EMAIL_USE_TLS = config('EMAIL_USE_TLS')
-#     EMAIL_PORT = config('EMAIL_PORT')
-#     EMAIL_HOST = config('EMAIL_HOST')
+if DEBUG: 
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:    
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+    EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+    EMAIL_PORT = config('EMAIL_PORT')
+    EMAIL_HOST = config('EMAIL_HOST')
