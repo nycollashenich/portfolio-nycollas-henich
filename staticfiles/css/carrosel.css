@@ -1,0 +1,114 @@
+#body-carrosel{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  }
+  .slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  }
+  
+  .slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  }
+  
+  .card{
+  border-radius: 25px;
+  background-color: #FFF ;
+  }
+  
+  .image-content, .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 41px;
+  }
+  
+  .image-content{
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+  }
+  
+  .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  border-radius: 25px 25px 0 25px;
+  }
+  
+  .overlay::before,
+  .overlay::after{
+  right: 0;
+  bottom: -40px;
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: green;
+  }
+  .overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+  
+  }
+  .card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #EFEFEF;
+  padding: 3px;
+  }
+  
+  .card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 4px solid green;
+  }
+  
+  .name-carrosel{
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  }
+  
+  .description-carrosel {
+  font-size: 14px;
+  color:#707070;
+  text-align: center;
+  }
+  
+.cont-button-project{
+  display: flex;
+  justify-content: space-between; 
+  gap: 9px; 
+}
+
+  .button-carrosel {
+  border: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 15px;
+  border-radius: 15%;
+  background-color: green;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  .button:hover{
+    background: green;
+  }
+
+  .swiper-pagination-bullet {
+  background-color: #fff; /* Cor padrão dos bullets */
+}
