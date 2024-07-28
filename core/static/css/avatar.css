@@ -22,11 +22,11 @@
 
 .imagem-ajustada-sc{
     position: absolute;
-    right: 0; /* Posiciona a imagem à direita */
-    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    right: 0; 
+    top: 95px; 
     width: 100%;
-    max-width: 350px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção */
+    max-width: 350px; 
+    height: auto; 
     margin-right: 100px;
-    margin-top: -12px;
+    margin-top: -10px;
 }
