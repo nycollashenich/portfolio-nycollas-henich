@@ -93,8 +93,9 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(config('DATABASE_URL'), conn_max_age=600),
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -149,3 +150,12 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST ='smtp.gmail.com'
+
+
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-nycollas-henich-production.up.railway.app/']
+
+CSRF_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
+
+SESSION_COOKIE_SECURE = True
