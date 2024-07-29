@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://portfolio-nycollas-henich-production.up.railway.app/']
 
 
 
@@ -153,4 +153,4 @@ EMAIL_HOST ='smtp.gmail.com'
 
 
 CSRF_TRUSTED_ORIGINS = ['https://portfolio-nycollas-henich-production.up.railway.app/']
-    
+
