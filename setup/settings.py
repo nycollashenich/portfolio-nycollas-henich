@@ -30,6 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-nycollas-henich-production.up.railway.app/']
+
 
 # Application definition
 
