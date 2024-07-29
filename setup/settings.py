@@ -28,6 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://portfolio-nycollas-henich-production.up.railway.app/', 'localhost', '127.0.0.1']
 
 
 
@@ -153,5 +154,4 @@ EMAIL_HOST ='smtp.gmail.com'
 
 
 CSRF_TRUSTED_ORIGINS = ['https://portfolio-nycollas-henich-production.up.railway.app/']
-
-CSRF_COOKIE_SECURE = True
+    
